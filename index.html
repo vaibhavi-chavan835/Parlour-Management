@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Parlour Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Golden Touch Beauty Parlour</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#booking">Book Appointment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Golden Touch Beauty Salon!</h2>
+    <p>Your beauty, our responsibility. Relax, refresh, and rejuvenate with us.</p>
+    <button onclick="scrollToBooking()">Book Now</button>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service-card">
+        <img src="haircut1.jpg" alt="Haircut">
+        
+        <h3>Haircut & Styling</h3>
+        <p>Trendy cuts and styles to suit your personality.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="facial3.jpg" alt="Facial">
+        <h3>Facial & Skin Care</h3>
+        <p>Glow naturally with our premium facial treatments.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="m3.jpg" alt="Manicure">
+        <h3>Manicure & Pedicure</h3>
+        <p>Give your hands and feet the pampering they deserve.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Appointment</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="service">Select Service:</label>
+      <select id="service" required>
+        <option value="">Choose...</option>
+        <option value="Haircut">Haircut</option>
+        <option value="Facial">Facial</option>
+        <option value="Manicure">Manicure</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="confirmation"></p>
+  </section>
+
+  <footer id="contact">
+    <h3>Contact Us</h3>
+    <p>📍 Golden Touch Beauty Salon Nande Stop ,Latur</p>
+    <p>📞 +91 9049157258</p>
+    <p>💌 goldentouchbeautysalon@gmail.com</p>
+    <p>© 2025 Golden Touch Beauty Parlour | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
